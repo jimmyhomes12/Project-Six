@@ -70,6 +70,34 @@ null result is reliable. **Recommendation: do not launch the new page.**
 - Independence of observations (random assignment, no cross-contamination)
 - Large-sample normal approximation (both n > 100,000)
 
+## How to Run
+
+1. Place the Kaggle CSV as:
+
+   ```text
+   Statistics_Foundations/AB_Test_Ecommerce/data/ab_test_raw.csv
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r Statistics_Foundations/AB_Test_Ecommerce/requirements.txt
+   ```
+
+3. Open and run the notebook:
+
+   ```bash
+   jupyter notebook Statistics_Foundations/AB_Test_Ecommerce/notebooks/01_ab_test_ecommerce.ipynb
+   ```
+
+4. Review the final section for test statistics, confidence intervals, and recommendation.
+
+## Tools & Libraries
+
+- Python, Jupyter Notebook
+- pandas, NumPy, matplotlib, seaborn
+- statsmodels (`proportions_ztest`, `proportion_confint`) for hypothesis testing
+
 ## File Structure
 
 ```
@@ -81,5 +109,6 @@ Statistics_Foundations/
     │   └── 01_ab_test_ecommerce.ipynb  # Full analysis notebook
     ├── reports/
     │   └── ab_test_summary.md       # Written summary of results
+    ├── requirements.txt             # Python dependencies
     └── README.md                    # This file
 ```
