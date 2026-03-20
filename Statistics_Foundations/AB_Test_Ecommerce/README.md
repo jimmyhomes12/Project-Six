@@ -50,20 +50,23 @@ Steps performed:
 
 ## Results
 
-| Group | n | Conversions | Rate |
-|---|---|---|---|
-| Control | 145,274 | 17,489 | 12.04% |
-| Treatment | 145,311 | 17,264 | 11.88% |
+| Group     | n       | Conversions | Rate   |
+|----------|---------|-------------|--------|
+| Control  | 145,274 | 17,489      | 12.04% |
+| Treatment | 145,311 | 17,264      | 11.88% |
 
-- **Z-statistic:** −1.31 | **P-value:** 0.905
-- **Difference (treat − control):** −0.158 percentage points
-- **95% CI for difference:** [−0.394 pp, +0.078 pp]
+- **Z-statistic:** -1.3116  
+- **p-value:** 0.9052 (one-tailed)  
+- **Absolute lift:** -0.158 percentage points  
+- **95% CI for lift:** [-0.394 pp, +0.078 pp]
 
-## Conclusion
+**Conclusion:** At α = 0.05, we fail to reject H₀. The new landing page does **not** show a statistically significant improvement in conversion, and the observed lift is slightly negative.
 
-We **fail to reject H₀**. The new landing page does not produce a statistically significant
-improvement in conversion rate. The test is well-powered (~147K users per arm); the
-null result is reliable. **Recommendation: do not launch the new page.**
+## Key Insights
+
+- Both pages convert at ~12%; the new page is 0.158 percentage points lower.
+- The confidence interval includes zero and small negative values, so any true lift is likely very small in practice.
+- The large sample size means this result is robust: if a real improvement existed, this test was well powered to detect it.
 
 ## Statistical Assumptions
 
